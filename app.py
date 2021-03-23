@@ -11,8 +11,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    
+    print('Hola')
     return render_template('index.html')
+    #return 'Hola!!'
 
 @app.route('/resultat', methods=['GET'])
 def envoie_email():
@@ -25,10 +26,10 @@ def envoie_email():
     #print(request.args.get('email'))
     print(email)
     print('envoyer le message à '+str(email))
-    #obj_email = main(email)
-    #reponse = "Envoye Reussie" if obj_email else "Email PAS Envoyé - Pas des nouveau messages"
+    obj_email = main(email)
+    reponse = "Envoye Reussie" if obj_email else "Email PAS Envoyé - Pas des nouveau messages"
 
-    return 'VAMOS!!!' #reponse 
+    return reponse 
 
 
 # @app.route('/apivideo', methods=['GET'])

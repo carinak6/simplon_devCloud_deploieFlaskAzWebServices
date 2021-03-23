@@ -1,1 +1,6 @@
 caryk6-vm_az_key.pem
+__pycache__/
+scrapping/__pycache__/
+.azure/
+.venv/
+*.log

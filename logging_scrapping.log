@@ -958,3 +958,7 @@
 2021-03-23 13:09:51,829 INFO werkzeug Thread-6 : 127.0.0.1 - - [23/Mar/2021 13:09:51] "[37mGET /resultat?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
 2021-03-23 13:09:51,835 INFO werkzeug Thread-7 : 127.0.0.1 - - [23/Mar/2021 13:09:51] "[37mGET /resultat?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
 2021-03-23 13:09:52,144 INFO werkzeug Thread-8 : 127.0.0.1 - - [23/Mar/2021 13:09:52] "[37mGET /resultat?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+2021-03-23 14:18:21,874 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-03-23 14:23:19,916 INFO werkzeug Thread-1 : 127.0.0.1 - - [23/Mar/2021 14:23:19] "[37mGET / HTTP/1.1[0m" 200 -
+2021-03-23 14:23:20,232 INFO werkzeug Thread-2 : 127.0.0.1 - - [23/Mar/2021 14:23:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-03-23 14:23:33,834 INFO werkzeug Thread-3 : 127.0.0.1 - - [23/Mar/2021 14:23:33] "[37mGET /resultat?email=david.k6%40hotmail.fr HTTP/1.1[0m" 200 -
