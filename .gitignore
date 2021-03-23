@@ -1,6 +1,10 @@
 caryk6-vm_az_key.pem
+<<<<<<< HEAD
 __pycache__/
 scrapping/__pycache__/
 .azure/
 .venv/
 *.log
+=======
+scrapping/__pycache__/
+>>>>>>> b6110634c24e82851b650e1a4ee52f823694782a
