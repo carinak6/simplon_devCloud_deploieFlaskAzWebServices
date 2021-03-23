@@ -1,5 +1,4 @@
 Flask>=1.0,<=1.1.2
-<<<<<<< HEAD
 build-essential
 libssl-dev
 libffi-dev
@@ -23,5 +22,3 @@ beautifulsoup4
 python-html5lib
 python-lxml
 lxml
-=======
->>>>>>> b6110634c24e82851b650e1a4ee52f823694782a
