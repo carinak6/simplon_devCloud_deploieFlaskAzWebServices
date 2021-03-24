@@ -9,10 +9,10 @@ class ConnectionBDD_PG:
     def __init__(self):
         #, dbName, user, passwd, host
         #"Établissement de la connexion - Création du curseur"
-        try:
+        try: 
             
             #docker run -it --rm postgres psql -h carina-bddscrapping.postgres.database.azure.com -U caryk6@carina-bddscrapping -p 5432 postgres
-            #self.cnx = psycopg2.connect(host ='localhost', user ='postgres', dbname ='postgres', password ='cba1491EPINAY', sslmode = 'require')
+            #self.cnx = psycopg2.connect(host ='localhost', user ='postgres', dbname ='postgres', password ='cba1491EPINAY', sslmode = 'require') , port= '5432'
             self.cnx = psycopg2.connect(host ='40.84.54.98', user ='postgres', dbname ='postgres', password ='cba1491EPINAY',sslmode = 'require')
 
             print('connexion reussi PostGresql!!!') 
@@ -98,8 +98,8 @@ class ConnectionBDD_PG:
             mon_cursor = self.cnx.cursor()
             annonces_non_send=[]
             print('************* lastAnnonces ***************')
-            #mon_cursor.execute('SELECT * FROM offer WHERE date_send_email IS NULL')
-            mon_cursor.execute('SELECT * FROM offer LIMIT 3 OFFSET 3')
+            mon_cursor.execute('SELECT * FROM offer WHERE date_send_email IS NULL')
+            #mon_cursor.execute('SELECT * FROM offer LIMIT 3 OFFSET 3')
             print('SELECT * FROM offer LIMIT 3 OFFSET 3')
             annonces_non_send = mon_cursor.fetchall()
             

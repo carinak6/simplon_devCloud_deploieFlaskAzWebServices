@@ -98,7 +98,7 @@ class GestionEmail():
     def send_email(self,email_target):
         print('entre send_email')
         var_bdd = ConnectionBDD_PG()
-        print('connexion reussi!!!! passe à last annonces')
+        print('Send_email passe à last annonces')
         list_new_annonces = var_bdd.lastAnnonces()
 
         if len(list_new_annonces) !=0:        

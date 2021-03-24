@@ -962,3 +962,287 @@
 2021-03-23 14:23:19,916 INFO werkzeug Thread-1 : 127.0.0.1 - - [23/Mar/2021 14:23:19] "[37mGET / HTTP/1.1[0m" 200 -
 2021-03-23 14:23:20,232 INFO werkzeug Thread-2 : 127.0.0.1 - - [23/Mar/2021 14:23:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
 2021-03-23 14:23:33,834 INFO werkzeug Thread-3 : 127.0.0.1 - - [23/Mar/2021 14:23:33] "[37mGET /resultat?email=david.k6%40hotmail.fr HTTP/1.1[0m" 200 -
+2021-03-24 05:46:13,842 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-03-24 05:46:37,793 INFO werkzeug Thread-1 : 127.0.0.1 - - [24/Mar/2021 05:46:37] "[37mGET / HTTP/1.1[0m" 200 -
+2021-03-24 05:46:43,887 INFO root Thread-3 : Beginning of the script
+2021-03-24 05:48:53,763 ERROR app Thread-3 : Exception on /resultat [GET]
+Traceback (most recent call last):
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/app.py", line 29, in envoie_email
+    obj_email = main(email)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/scrapping/main.py", line 52, in main
+    reponse_email=var_email.send_email(email_target)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/scrapping/send_email.py", line 104, in send_email
+    if len(list_new_annonces) !=0:
+TypeError: object of type 'NoneType' has no len()
+2021-03-24 05:48:53,777 INFO werkzeug Thread-3 : 127.0.0.1 - - [24/Mar/2021 05:48:53] "[35m[1mGET /resultat?email=david.k6%40hotmail.fr HTTP/1.1[0m" 500 -
+2021-03-24 07:25:46,014 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-03-24 07:26:00,431 INFO werkzeug Thread-1 : 127.0.0.1 - - [24/Mar/2021 07:26:00] "[37mGET / HTTP/1.1[0m" 200 -
+2021-03-24 07:26:05,150 INFO root Thread-4 : Beginning of the script
+2021-03-24 07:28:15,494 ERROR app Thread-4 : Exception on /resultat [GET]
+Traceback (most recent call last):
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/app.py", line 29, in envoie_email
+    obj_email = main(email)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/scrapping/main.py", line 52, in main
+    reponse_email=var_email.send_email(email_target)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/scrapping/send_email.py", line 104, in send_email
+    if len(list_new_annonces) !=0:
+TypeError: object of type 'NoneType' has no len()
+2021-03-24 07:28:15,503 INFO werkzeug Thread-4 : 127.0.0.1 - - [24/Mar/2021 07:28:15] "[35m[1mGET /resultat?email=david.k6%40hotmail.fr HTTP/1.1[0m" 500 -
+2021-03-24 07:30:31,358 INFO root Thread-6 : Beginning of the script
+2021-03-24 07:31:18,908 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-03-24 07:31:21,213 INFO root Thread-1 : Beginning of the script
+2021-03-24 07:31:34,406 INFO root Thread-3 : Beginning of the script
+2021-03-24 07:33:30,880 ERROR app Thread-1 : Exception on /resultat [GET]
+Traceback (most recent call last):
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/app.py", line 29, in envoie_email
+    obj_email = main(email)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/scrapping/main.py", line 52, in main
+    reponse_email=var_email.send_email(email_target)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/scrapping/send_email.py", line 104, in send_email
+    if len(list_new_annonces) !=0:
+TypeError: object of type 'NoneType' has no len()
+2021-03-24 07:33:30,888 INFO werkzeug Thread-1 : 127.0.0.1 - - [24/Mar/2021 07:33:30] "[35m[1mGET /resultat?email=david.k6%40hotmail.fr HTTP/1.1[0m" 500 -
+2021-03-24 07:33:45,216 ERROR app Thread-3 : Exception on /resultat [GET]
+Traceback (most recent call last):
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/app.py", line 29, in envoie_email
+    obj_email = main(email)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/scrapping/main.py", line 52, in main
+    reponse_email=var_email.send_email(email_target)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/scrapping/send_email.py", line 104, in send_email
+    if len(list_new_annonces) !=0:
+TypeError: object of type 'NoneType' has no len()
+2021-03-24 07:33:45,218 INFO werkzeug Thread-3 : 127.0.0.1 - - [24/Mar/2021 07:33:45] "[35m[1mGET /resultat?email=david.k6%40hotmail.fr HTTP/1.1[0m" 500 -
+2021-03-24 07:51:48,641 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-03-24 07:52:01,670 INFO werkzeug Thread-1 : 127.0.0.1 - - [24/Mar/2021 07:52:01] "[37mGET / HTTP/1.1[0m" 200 -
+2021-03-24 07:52:14,824 INFO root Thread-4 : Beginning of the script
+2021-03-24 07:52:14,870 ERROR app Thread-4 : Exception on /resultat [GET]
+Traceback (most recent call last):
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/app.py", line 29, in envoie_email
+    obj_email = main(email)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/scrapping/main.py", line 52, in main
+    reponse_email=var_email.send_email(email_target)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/scrapping/send_email.py", line 104, in send_email
+    if len(list_new_annonces) !=0:
+TypeError: object of type 'NoneType' has no len()
+2021-03-24 07:52:14,872 INFO werkzeug Thread-4 : 127.0.0.1 - - [24/Mar/2021 07:52:14] "[35m[1mGET /resultat?email=david.k6%40hotmail.fr HTTP/1.1[0m" 500 -
+2021-03-24 08:10:08,884 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-03-24 08:10:22,474 INFO werkzeug Thread-1 : 127.0.0.1 - - [24/Mar/2021 08:10:22] "[37mGET / HTTP/1.1[0m" 200 -
+2021-03-24 08:10:26,561 INFO root Thread-3 : Beginning of the script
+2021-03-24 08:10:26,609 ERROR app Thread-3 : Exception on /resultat [GET]
+Traceback (most recent call last):
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/app.py", line 29, in envoie_email
+    obj_email = main(email)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/scrapping/main.py", line 52, in main
+    reponse_email=var_email.send_email(email_target)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/scrapping/send_email.py", line 104, in send_email
+    if len(list_new_annonces) !=0:
+TypeError: object of type 'NoneType' has no len()
+2021-03-24 08:10:26,617 INFO werkzeug Thread-3 : 127.0.0.1 - - [24/Mar/2021 08:10:26] "[35m[1mGET /resultat?email=kassiscarina%40gmail.com HTTP/1.1[0m" 500 -
+2021-03-24 10:31:26,781 INFO werkzeug MainThread :  * Running on http://0.0.0.0:4000/ (Press CTRL+C to quit)
+2021-03-24 10:31:26,785 INFO werkzeug MainThread :  * Restarting with stat
+2021-03-24 10:31:27,122 WARNING werkzeug MainThread :  * Debugger is active!
+2021-03-24 10:31:27,147 INFO werkzeug MainThread :  * Debugger PIN: 322-431-911
+2021-03-24 10:31:59,947 INFO werkzeug Thread-2 : 127.0.0.1 - - [24/Mar/2021 10:31:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-03-24 10:33:05,800 INFO werkzeug Thread-4 : 127.0.0.1 - - [24/Mar/2021 10:33:05] "[37mGET / HTTP/1.1[0m" 200 -
+2021-03-24 10:33:06,583 INFO werkzeug Thread-5 : 127.0.0.1 - - [24/Mar/2021 10:33:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-03-24 10:33:10,230 INFO root Thread-6 : Beginning of the script
+2021-03-24 10:33:10,365 INFO werkzeug Thread-6 : 127.0.0.1 - - [24/Mar/2021 10:33:10] "[35m[1mGET /resultat?email=kassiscarina%40gmail.com HTTP/1.1[0m" 500 -
+2021-03-24 10:33:10,697 INFO werkzeug Thread-7 : 127.0.0.1 - - [24/Mar/2021 10:33:10] "[37mGET /resultat?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+2021-03-24 10:33:10,722 INFO werkzeug Thread-8 : 127.0.0.1 - - [24/Mar/2021 10:33:10] "[37mGET /resultat?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+2021-03-24 10:33:10,729 INFO werkzeug Thread-9 : 127.0.0.1 - - [24/Mar/2021 10:33:10] "[37mGET /resultat?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+2021-03-24 10:33:11,474 INFO werkzeug Thread-10 : 127.0.0.1 - - [24/Mar/2021 10:33:11] "[37mGET /resultat?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+2021-03-24 10:33:11,695 INFO werkzeug Thread-11 : 127.0.0.1 - - [24/Mar/2021 10:33:11] "[37mGET /resultat?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+2021-03-24 11:17:38,582 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-03-24 11:18:09,893 INFO werkzeug Thread-1 : 127.0.0.1 - - [24/Mar/2021 11:18:09] "[37mGET / HTTP/1.1[0m" 200 -
+2021-03-24 11:18:10,127 INFO werkzeug Thread-2 : 127.0.0.1 - - [24/Mar/2021 11:18:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-03-24 11:18:19,794 INFO root Thread-3 : Beginning of the script
+2021-03-24 11:18:19,834 ERROR app Thread-3 : Exception on /resultat [GET]
+Traceback (most recent call last):
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/app.py", line 29, in envoie_email
+    obj_email = main(email)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/scrapping/main.py", line 52, in main
+    reponse_email=var_email.send_email(email_target)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/scrapping/send_email.py", line 104, in send_email
+    if len(list_new_annonces) !=0:
+TypeError: object of type 'NoneType' has no len()
+2021-03-24 11:18:19,845 INFO werkzeug Thread-3 : 127.0.0.1 - - [24/Mar/2021 11:18:19] "[35m[1mGET /resultat?email=kassiscarina%40gmail.com HTTP/1.1[0m" 500 -
+2021-03-24 11:52:52,704 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-03-24 11:53:06,457 INFO werkzeug Thread-1 : 127.0.0.1 - - [24/Mar/2021 11:53:06] "[37mGET / HTTP/1.1[0m" 200 -
+2021-03-24 11:53:10,763 INFO root Thread-2 : Beginning of the script
+2021-03-24 11:55:20,975 ERROR app Thread-2 : Exception on /resultat [GET]
+Traceback (most recent call last):
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/app.py", line 29, in envoie_email
+    obj_email = main(email)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/scrapping/main.py", line 52, in main
+    reponse_email=var_email.send_email(email_target)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/scrapping/send_email.py", line 104, in send_email
+    if len(list_new_annonces) !=0:
+TypeError: object of type 'NoneType' has no len()
+2021-03-24 11:55:20,979 INFO werkzeug Thread-2 : 127.0.0.1 - - [24/Mar/2021 11:55:20] "[35m[1mGET /resultat?email=david.k6%40hotmail.fr HTTP/1.1[0m" 500 -
+2021-03-24 11:57:52,379 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-03-24 11:57:58,190 INFO werkzeug Thread-1 : 127.0.0.1 - - [24/Mar/2021 11:57:58] "[37mGET / HTTP/1.1[0m" 200 -
+2021-03-24 11:58:01,977 INFO root Thread-2 : Beginning of the script
+2021-03-24 12:00:11,796 ERROR app Thread-2 : Exception on /resultat [GET]
+Traceback (most recent call last):
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/app.py", line 29, in envoie_email
+    obj_email = main(email)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/scrapping/main.py", line 52, in main
+    reponse_email=var_email.send_email(email_target)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/scrapping/send_email.py", line 104, in send_email
+    if len(list_new_annonces) !=0:
+TypeError: object of type 'NoneType' has no len()
+2021-03-24 12:00:11,799 INFO werkzeug Thread-2 : 127.0.0.1 - - [24/Mar/2021 12:00:11] "[35m[1mGET /resultat?email=david.k6%40hotmail.fr HTTP/1.1[0m" 500 -
+2021-03-24 12:01:02,582 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-03-24 12:01:07,590 INFO werkzeug Thread-1 : 127.0.0.1 - - [24/Mar/2021 12:01:07] "[37mGET / HTTP/1.1[0m" 200 -
+2021-03-24 12:01:12,428 INFO root Thread-2 : Beginning of the script
+2021-03-24 12:03:22,256 ERROR app Thread-2 : Exception on /resultat [GET]
+Traceback (most recent call last):
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/caryk6/.local/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/app.py", line 29, in envoie_email
+    obj_email = main(email)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/scrapping/main.py", line 52, in main
+    reponse_email=var_email.send_email(email_target)
+  File "/home/caryk6/git-test-version2-appService/simplon_devCloud_deploieFlaskAzWebServices/scrapping/send_email.py", line 104, in send_email
+    if len(list_new_annonces) !=0:
+TypeError: object of type 'NoneType' has no len()
+2021-03-24 12:03:22,260 INFO werkzeug Thread-2 : 127.0.0.1 - - [24/Mar/2021 12:03:22] "[35m[1mGET /resultat?email=david.k6%40hotmail.fr HTTP/1.1[0m" 500 -
+2021-03-24 12:26:31,423 INFO werkzeug MainThread :  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-03-24 12:26:40,344 INFO werkzeug Thread-1 : 127.0.0.1 - - [24/Mar/2021 12:26:40] "[37mGET / HTTP/1.1[0m" 200 -
+2021-03-24 12:26:44,593 INFO root Thread-2 : Beginning of the script
+2021-03-24 12:26:46,869 INFO root Thread-2 : On cree une instance de la classe GestionEmail que realise l'envoye de l'email - End : kassiscarina@gmail.com
+2021-03-24 12:26:46,869 INFO root Thread-2 : Fin du main
+2021-03-24 12:26:46,870 INFO werkzeug Thread-2 : 127.0.0.1 - - [24/Mar/2021 12:26:46] "[37mGET /resultat?email=kassiscarina%40gmail.com HTTP/1.1[0m" 200 -
+2021-03-24 12:52:54,561 INFO werkzeug Thread-4 : 127.0.0.1 - - [24/Mar/2021 12:52:54] "[37mGET / HTTP/1.1[0m" 200 -
+2021-03-24 12:53:21,128 INFO root Thread-5 : Beginning of the script
+2021-03-24 12:53:23,144 INFO root Thread-5 : On cree une instance de la classe GestionEmail que realise l'envoye de l'email - End : 
+2021-03-24 12:53:23,144 INFO root Thread-5 : Fin du main
+2021-03-24 12:53:23,144 INFO werkzeug Thread-5 : 127.0.0.1 - - [24/Mar/2021 12:53:23] "[37mGET /resultat?email= HTTP/1.1[0m" 200 -
+2021-03-24 12:56:40,777 INFO werkzeug Thread-7 : 127.0.0.1 - - [24/Mar/2021 12:56:40] "[37mGET / HTTP/1.1[0m" 200 -
+2021-03-24 12:57:14,351 INFO root Thread-8 : Beginning of the script
+2021-03-24 12:57:15,913 INFO root Thread-8 : On cree une instance de la classe GestionEmail que realise l'envoye de l'email - End : david.k6@hotmail.fr
+2021-03-24 12:57:15,913 INFO root Thread-8 : Fin du main
+2021-03-24 12:57:15,913 INFO werkzeug Thread-8 : 127.0.0.1 - - [24/Mar/2021 12:57:15] "[37mGET /resultat?email=david.k6%40hotmail.fr HTTP/1.1[0m" 200 -
+2021-03-24 12:58:59,834 INFO werkzeug Thread-10 : 127.0.0.1 - - [24/Mar/2021 12:58:59] "[37mGET / HTTP/1.1[0m" 200 -
+2021-03-24 12:59:06,433 INFO root Thread-11 : Beginning of the script
+2021-03-24 12:59:08,138 INFO root Thread-11 : On cree une instance de la classe GestionEmail que realise l'envoye de l'email - End : david.k6@hotmail.fr
+2021-03-24 12:59:08,138 INFO root Thread-11 : Fin du main
+2021-03-24 12:59:08,138 INFO werkzeug Thread-11 : 127.0.0.1 - - [24/Mar/2021 12:59:08] "[37mGET /resultat?email=david.k6%40hotmail.fr HTTP/1.1[0m" 200 -

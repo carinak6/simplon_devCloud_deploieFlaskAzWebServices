@@ -14,7 +14,7 @@ class CleanBdd_PG:
         #"Établissement de la connexion - Création du curseur"
         try:
             #self.cnx = psycopg2.connect(host ='localhost', user ='postgres', dbname ='postgres', password ='cba1491EPINAY', sslmode = 'require')
-            self.cnx = psycopg2.connect(host ='40.84.54.98', user ='postgres', dbname ='postgres', password ='cba1491EPINAY', sslmode = 'require')
+            self.cnx = psycopg2.connect(host ='40.84.54.98', user ='postgres', dbname ='postgres', password ='cba1491EPINAY', port= '5432', sslmode = 'require')
             #self.cnx = mysql.connector.connect(user='root', password='sha', host='my_mysql', database='bd_scrapping', use_unicode=True, charset='utf8')
             print('connexion reussi') 
             #self.mycursor = self.cnx.cursor()
