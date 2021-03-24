@@ -18,7 +18,7 @@ requests
 # setuptools
 unidecode
 # python3-bs4
-# beautifulsoup4
+beautifulsoup4
 # python-html5lib
 # python-lxml
-# lxml==3.4.2
+lxml
