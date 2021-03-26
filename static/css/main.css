@@ -1,0 +1,18 @@
+body{
+    display: flex;
+    flex-direction: column;
+    /*background-color: rebeccapurple;*/
+    
+}
+
+section{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(73, 73, 153);
+    /*border: 1px solid rgb(73, 73, 153);*/
+    background-color: #95aad8;
+    padding: 40px;
+    justify-content: space-between ; 
+    text-align: center;
+}

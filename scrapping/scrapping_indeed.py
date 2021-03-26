@@ -21,18 +21,20 @@ class Indeed:
         tag3='cloud'        
         location='ile-de-France'
         
+        #https://fr.indeed.com/emplois?as_and=alternance+cloud&as_phr=&as_any=&as_not=&as_ttl=&as_cmp=&jt=custom_1&st=&salary=&radius=25&l=%C3%8Ele-de-France&fromage=any&limit=50&sort=date&psf=advsrch&from=advancedsearch
+
         #original cible les alternance devoppeur cloud sur l ile de france
         self.url_indeed_1 = f'https://fr.indeed.com/jobs?q={tag1}+{tag2}+{tag3}&l={location}&start=40'
         self.url_indeed_2 = f'https://fr.indeed.com/jobs?q={tag2}+{tag3}&l={location}&start=40'
-        self.url_indeed_3 = f'https://fr.indeed.com/jobs?q={tag1}+{tag3}&l={location}&start=40'
+        self.url_indeed_3 = f'https://fr.indeed.com/jobs?q={tag1}+{tag3}&l={location}&jt=custom_1&fromage=14'
         # self.url_indeed_4 = f'https://fr.indeed.com/jobs?q={tag1}+{tag2}&l={location}&start=30'
         # self.url_indeed_5 = f'https://fr.indeed.com/jobs?q={tag1}+{tag2}&l={location}&start=40'
             
         
         
         logging.info('on recupere le contenur de l url passé comme parametre du methode get requests url :'+self.url_indeed_1)
-        self.page = requests.get(self.url_indeed_1)
-        print("************ " +self.url_indeed_1 +" **********")
+        self.page = requests.get(self.url_indeed_3)
+        print("************ " +self.url_indeed_3 +" **********")
         reponse_get =self.page#200 
         print(reponse_get)
         logging.info('Connexion reussi ? reponse '+str(reponse_get))
