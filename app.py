@@ -24,9 +24,10 @@ def envoie_email():
     # email = request.form['email']
     
     #print(request.args.get('email'))
-    print(email)
+    #print(email)
     print('envoyer le message à '+str(email))
     obj_email = main(email)
+    #obj_email=True #quand indeed bloque l'acces
     reponse = "Envoye Reussie" if obj_email else "Email PAS Envoyé - Pas des nouveau messages"
 
     return reponse 
